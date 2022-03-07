@@ -35,7 +35,7 @@ The following files must be in the runfolder to start pipeline successfully.
 
 ### 1. Samplesheet (CTG_SampleSheet.sc-cite-seq-10x.csv):
 
-- If using other names than CTG_SampleSheet.**sc-multi-10x**.csv - then specify which sheet when starting driver: e.g. `sc-cite-seq-10x-driver -s CTG_SampleSheet.2022_102.csv`
+- If using other names than CTG_SampleSheet.**sc-multi-10x**.csv - then specify which sheet when starting driver: e.g. `sc-multi-10x-driver -s CTG_SampleSheet.2022_102.csv`
 
 #### Example sheet
 
