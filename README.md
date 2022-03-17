@@ -1,8 +1,6 @@
 # ctg-sc-multi-10x
 10x GEX and cmo and/or adt
 
-# ctg-sc-cite-seq-10x 
-## Nextflow pipeline for processing of 10x cite-seq. RNA+(ADT/HTO) data with cellranger. 
 
 - Run one project at a time only
 - Demux -> cellranger -> QC -> delivery
