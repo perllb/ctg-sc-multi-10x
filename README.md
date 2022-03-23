@@ -31,7 +31,7 @@ The following files must be in the runfolder to start pipeline successfully.
 1. Samplesheet  (see `SampleSheet` section below)
 2. (OPTIONAL): Feature reference csv (see `Feature Reference` section below) if not using reference features on lsens4 `/projects/fs1/shared/references/cellranger_totalseq`.
 
-### 1. Samplesheet (CTG_SampleSheet.sc-cite-seq-10x.csv):
+### 1. Samplesheet (CTG_SampleSheet.sc-multi-10x.csv):
 
 - If using other names than CTG_SampleSheet.**sc-multi-10x**.csv - then specify which sheet when starting driver: e.g. `sc-multi-10x-driver -s CTG_SampleSheet.2022_102.csv`
 
@@ -40,7 +40,7 @@ The following files must be in the runfolder to start pipeline successfully.
 ##### With both ADT and CMO
 ```
 [Header]
-metaid,2021_067_citeseqTest
+metaid,2021_067_citeseqTestmulti
 antibodies,"ADT_A0574,ADT_A0052,ADT_A0394,ADT_A0161,ADT_A0063,ADT_A0576,ADT_A0054,ADT_A0048"
 cmo,y
 email,per.a@med.lu.se
