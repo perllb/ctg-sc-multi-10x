@@ -142,7 +142,7 @@ In the samplesheet template **below** it will generate these two csv:
 ```
 [Header],,,,,,
 metaid,2022_112,,,,,
-cmo=y,
+cmo,y,
 antibodies,"ADT_A0933, ADT_A0432, ADT_A0395, ADT_A0572, ADT_A0815, ADT_A0062, ADT_A0944, ADT_A0244, ADT_A0145, ADT_A0068, ADT_A0245, ADT_A0155, ADT_A0817",,,,,
 email,per.a@med.lu.se,,,,,
 autodeliver,y,,,,,
@@ -157,7 +157,7 @@ Lane,Sample_ID,index,Sample_Species,Sample_Project,Sample_Lib,Sample_Pair,Sample
 ```
 [Header],,,,,,
 metaid,2022_112,,,,,
-cmo=n,
+cmo,n,
 antibodies,"ADT_A0933, ADT_A0432, ADT_A0395, ADT_A0572, ADT_A0815, ADT_A0062, ADT_A0944, ADT_A0244, ADT_A0145, ADT_A0068, ADT_A0245, ADT_A0155, ADT_A0817",,,,,
 email,per.a@med.lu.se,,,,,
 autodeliver,y,,,,,
@@ -171,7 +171,7 @@ Lane,Sample_ID,index,Sample_Species,Sample_Project,Sample_Lib,Sample_Pair,Sample
 ```
 [Header],,,,,,
 metaid,2022_112,,,,,
-cmo=y,
+cmo,y,
 antibodies,n,
 email,per.a@med.lu.se,,,,,
 autodeliver,y,,,,,
