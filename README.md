@@ -92,14 +92,13 @@ Lane,Sample_ID,index,Sample_Project,Sample_Species,Sample_Lib,Sample_Pair,Sample
 - `Sample` : A common name for GEX+CellPle+ADT sample. Must be the same for the corresponing GEX, CP and ADT samples (such as in example above). So all samples with "Sample_Pair" = 1, must have same "Sample" etc.
 - `CMO` : CMO IDs used for the given sample. NOTE: This is specified in the `GEX` sample only in the sheet. MUST be specified for the GEX, otherwise it will crash. Leave the CP sample empty here.
 - `cmotype` : `multi` or `single`. 
-  - `multi`: If there are multiple CMOs pr sample. The same biological sample were split and a CMO was added to each new vial, and then pooled to one "sample_ID" in samplesheet. This would cause the CMO-"declaration" to be 
+  - `multi`: If there are multiple CMOs pr "sample". The same "biological sample" were split and a CMO was added to each "subsample", which were then pooled to one "sample_id" (one row) in samplesheet. This would cause the CMO-"declaration" in the library.csv to be 
   ```
   [samples]
   sample_id,cmo_ids
-  sample1,CMO301|CMO302
-  sample2,CMO303|CMO304
+  sample1,CMO301|CMO302|CMO303|CMO304
   ```
-  - `single`: Each CMO represent one sample. Typically, different samples were treated with different CMOs, and then pooled. So one declaration will be:
+  - `single`: Each CMO represent one sample. Typically, different "biological samples" were treated separately with different CMOs, and then pooled to one "samplesheet sample". So the declaration will be:
   ```
   [samples]
   sample_id,cmo_ids
@@ -114,7 +113,8 @@ Lane,Sample_ID,index,Sample_Project,Sample_Species,Sample_Lib,Sample_Pair,Sample
   sample_id,cmo_ids
   ${sid}-301,CMO301
   ${sid}-302,CMO302
-  ${sid}-311,CMO311
+  ${sid}-303,CMO303
+  ${sid}-304,CMO304
   etc..
 ```
 
